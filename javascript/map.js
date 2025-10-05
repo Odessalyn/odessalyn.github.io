@@ -130,8 +130,6 @@ $.ajax({
     console.log(data);
     // 'data' is an Array of Objects
 
-    console.log(data[0])
-
   }
 });
-*/
+
