@@ -1,12 +1,12 @@
 const areaImages = {
-  isle: "/images/isleLabelorg.png",
-  tree: "/images/enderLabel.png",
-  rivers: "/images/riversLabel.png",
-  dragons: "/images/dragonsLabel.png",
-  eden: "/images/edenLabel.png",
-  waves: "/images/wavesLabel.png",
-  calirum: "/images/calirumLabel.png",
-  veremite: "/images/veremiteLabel.png",
+  isle: "/images/isleLabelorg.webp",
+  tree: "/images/enderLabel.webp",
+  rivers: "/images/riversLabel.webp",
+  dragons: "/images/dragonsLabel.webp",
+  eden: "/images/edenLabel.webp",
+  waves: "/images/wavesLabel.webp",
+  calirum: "/images/calirumLabel.webp",
+  veremite: "/images/veremiteLabel.webp",
 };
 
 const areaDesc = {

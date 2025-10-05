@@ -64,7 +64,7 @@
     box-sizing: border-box;
     border: 50px solid transparent;
     padding: 0px;
-    border-image: url(https://i.imgur.com/VM6y91M.png) 0 stretch
+    border-image: url(https://i.imgur.com/VM6y91M.webp) 0 stretch
 }
 
 .map-frame{
@@ -88,7 +88,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url('/images/border.png');
+    background-image: url('/images/border.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
