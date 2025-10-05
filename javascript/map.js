@@ -114,12 +114,12 @@ $("area").on("click", function (e) {
 
 //Google sheet 
 const sheetId = "1uRJSpoNwgT_Gpx6Nq3MNpkBvp4cobZFQlmlW8F0bs6o";
-const sheetName = encodeURIComponent("Sheet3");
+const sheetName = encodeURIComponent("Sheet4");
 const sheetURL = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?tqx=out:csv&sheet=${sheetName}`;
 
 
 //google sheets
-/*
+
 $.ajax({
   type: "GET",
   url: sheetURL,
@@ -130,26 +130,7 @@ $.ajax({
     console.log(data);
     // 'data' is an Array of Objects
 
-    //add their name to sidebar list
-    for (const person of data) {
-      const node = document.createElement("li");
-      const textnode = document.createTextNode(person.Name);
-      node.appendChild(textnode);
-      node.onclick = function UpdateInfo() {
-        nameDisplay.innerHTML = person.Name;
-        age.innerHTML = "Age: " + person.Age;
-        race.innerHTML = "Race: " + person.Race;
-        clas.innerHTML = "Class: " + person.Class;
-        relations.innerHTML = "Relations: " + person.Relations;
-        desc.innerHTML = person.Description;
-      };
-      list.appendChild(node);
-    }
-
-
-
-
-    console.log(data[0].Name)
+    console.log(data[0])
 
   }
 });
