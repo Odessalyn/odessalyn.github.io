@@ -1,0 +1,128 @@
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    display: grid;
+    grid-template-columns: 30% 1fr 30%;
+    grid-template-areas: "image info list";
+    background-color: rgb(37, 19, 46);
+    max-height: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    overflow: scroll;
+}
+
+.image{
+    background-color: rgb(24, 23, 23);
+    margin-left: 8rem;
+    margin-right: 2rem;
+}
+
+.image img{
+    height: 100%;
+    width: 100%;
+}
+
+.info{
+    background-image: url(/images/maybe.png);
+    background-repeat: repeat-x;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    height: 100%;
+}
+
+.info h1{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size:4rem;
+    font-family: king;
+    margin: 3rem 0 0 0;
+}
+
+.description{
+    overflow: auto;
+    height: 25rem;
+    padding: 0 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info p{
+    font-size: 1.5rem;
+}
+
+.info li {
+    color: rgba(0, 0, 0, 0.952);
+    font-size: 1.2rem;
+    padding: 0.5rem 4rem;
+    text-align: justify;
+    font-family: queen;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.info ul{
+    margin: 0;
+}
+
+.notes{
+    padding-left: 4rem;
+    margin: 1rem;
+    border-top:  rgba(48, 42, 36, 0.397) 0.1rem solid;
+    height: 2%;
+}
+
+.notes p{
+    font-size: 1.2rem;
+    overflow: scroll;
+    margin-right: 4rem;
+}
+
+.list{
+    background-color: rgb(24, 23, 23);
+    margin-right: 8rem;
+    margin-left: 2rem;
+    overflow: scroll;
+    height: 100%;
+
+}
+
+.list h2{
+    height: 5%;
+    padding-top: 2%;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-family: king;
+    background-color: rgb(23, 28, 100);
+    margin: 0;
+}
+
+.list ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list li{
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-bottom: 1px solid gray;
+    display: flex;
+    align-items: center;
+}
+
+.list img{
+    float: left;
+    height: 5rem;
+    width: auto;
+    padding-right: 1rem;
+}
+

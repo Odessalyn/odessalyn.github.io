@@ -1,0 +1,143 @@
+.body{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 25vw 1fr;
+    background-color: rgb(28, 26, 51);
+}
+
+.list{
+    background-color: rgb(180, 143, 94);
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+.list h2{
+    height: 5%;
+    padding-top: 2%;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-family: king;
+    background-color: rgb(23, 28, 100);
+    margin: 0;
+}
+
+.list ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list li{
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-bottom: 1px solid gray;
+    display: flex;
+    align-items: center;
+}
+
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    height: 85vh;
+    width: auto;
+    margin: auto;
+    overflow: hidden;
+    background-image: url(/images/water.jpg);
+    background-position: center;
+    background-size: contain;
+}
+
+
+.map-img img{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    box-sizing: border-box;
+    border: 50px solid transparent;
+    padding: 0px;
+    border-image: url(/images/border.png) 0 stretch
+}
+
+.map-frame{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; 
+    box-sizing: border-box;
+}
+
+.map-frame .map-img{
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: 1; 
+}
+
+.map-frame::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('/images/border.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    pointer-events: none;
+    z-index: 2;
+}
+
+
+#overlay {
+  position: absolute; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 80%;
+  width: 60%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  overflow: scroll;
+  border: solid black 0.2rem;
+  background-color: rgba(5, 50, 109, 0.562);
+}
+
+#name{
+    font-size: 3rem;
+    text-align: center;
+}
+
+#desc{
+    padding: 0 2rem;
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+li.detail {
+    font-size: 1.3rem;
+    color: rgb(104, 23, 23);
+}

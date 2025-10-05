@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Crown of Decay</title>
+  <link href="/styles/map.css" rel="stylesheet">
+  <link href="/styles/style.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="/javascript/map.js"></script>
+</head>
+
+<body>
+  <div class="parent">
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="characters.html">Characters</a></li>
+        <li><a href="session.html">Sessions</a></li>
+        <li><a href="map.html">Map</a></li>
+        <li><a href="lore.html">Lore</a></li>
+      </ul>
+    </nav>
+    <div class="body">
+
+      <div class="list">
+        <h2>Points of Interest</h2>
+        <ul>
+
+          <details>
+            <summary>
+              <li>Isle of Small Folk</li>
+            </summary>
+            <ul>
+              <li class="detail">Copper Moth Hideout</li>
+            </ul>
+          </details>
+
+          <li>Dragon's Coast</li>
+          <li>Calirum</li>
+          <li>Wavesbreak</li>
+          <li>Veremite</li>
+        </ul>
+      </div>
+
+      <div class="container">
+
+        <div id="overlay">
+          <div id="text">
+            <h2 id="name">Country Name</h2>
+            <p id="desc">Description</p>
+          </div>
+        </div>
+
+        <div class="map-frame">
+          <img class="map-img" src="/images/borderless.png" usemap="#varose">
+        </div>
+
+        <map name="varose">
+          <area target="" alt="isle" title="isle" href="#" coords="32,668,220,858" shape="rect">
+          <area target="" alt="tree" title="tree" href="" coords="449,735,550,810" shape="rect">
+          <area target="" alt="rivers" title="rivers" href="" coords="506,823,600,929" shape="rect">
+          <area target="" alt="dragons" title="dragons" href="" coords="617,1027,725,1145" shape="rect">
+          <area target="" alt="eden" title="eden" href="" coords="907,987,1003,1079" shape="rect">
+          <area target="" alt="waves" title="waves" href="" coords="856,1161,964,1233" shape="rect">
+          <area target="" alt="calirum" title="calirum" href="" coords="1351,903,1467,1000" shape="rect">
+          <area target="" alt="veremite" title="veremite" href="" coords="966,522,1058,604" shape="rect">
+        </map>
+      </div>
+
+
+    </div>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
+</body>
+
+</html>
